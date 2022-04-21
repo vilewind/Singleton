@@ -16,3 +16,5 @@ singleton pattern in cpp
 	但由于new操作可能出现问题，因此可以使用operator new + placement new强制new按顺序执行
 	同时，c++11规定了当一个线程正在初始化一个变量的时候，其他线程必须得等到该初始化完成以后才能访问它，所以使用函数内的局部静态变量的方法来实现
 	call_once与once_flag联合使用，可以保证实例对象只被初始化一次
+	
+### 使用智能指针实现单例对象的RAII
